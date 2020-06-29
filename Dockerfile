@@ -7,6 +7,6 @@ RUN apt update -y && apt install -y sudo && apt install -y vim && apt install -y
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
-RUN git clone https://github.com/arvincsh/zMEC-stream-loader.git
+RUN git clone https://github.com/arvincsh/zMEC-stream-loader-nb.git
 
 CMD [ "ffmpeg", "-i", "http://140.113.179.8:8000/live/ipcam.flv", "test.mp4", "-y"]
